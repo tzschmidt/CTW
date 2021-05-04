@@ -31,10 +31,4 @@ job(X,X):- jobNum(X), 2*b<X.
 % Direct Successor Consraint
 :- solution(T1,J1), solution(T2,J2), disuccon(J1,J2), T1!=T2-1.
 
-% Optimal Solution
-s(0) :- b=0.
-s(X) :- b!=0, X=sum{1, 
-
-
 #show solution/2.
-%#show s/1.
