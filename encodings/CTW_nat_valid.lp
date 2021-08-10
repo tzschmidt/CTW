@@ -14,10 +14,6 @@ disuccon(1,4).
 % native ASP encoding
 jobNum(1..2*b+n).
 
-% atm not needed
-job(X,X+b) :- jobNum(X), X<=b.
-job(X,X):- jobNum(X), 2*b<X.
-
 % to improve
 1{solution(T,J) : jobNum(J)}1 :- jobNum(T).
 :- solution(T1,J), solution(T2,J), T1!=T2.
