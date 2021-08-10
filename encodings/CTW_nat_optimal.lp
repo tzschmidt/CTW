@@ -1,8 +1,10 @@
 % test instance
+% num of cables
+#const k=7.
 % num of 2-sided cables
 #const b=2.
 % num of 1-sided cables
-#const n=3.
+#const n=k-2*b.
 
 atomiccon(3,2).
 atomiccon(5,6).
@@ -32,9 +34,15 @@ job(X,X):- jobNum(X), 2*b<X.
 :- solution(T1,J1), solution(T2,J2), disuccon(J1,J2), T1!=T2-1.
 
 % Optimal Solution
-%s(0) :- b=0.
-%s(X) :- b!=0, X=sum{1, 
+s(0) :- b=0.
+s(X) :- b!=0, X == #count{J:solution(T1,J), solution(T2,J+b), |T1-T2|>1, J<=b}.
 
+m(0) :- b=0.
+ms(T,S1+S2) :- b!=0, jobNum(T),
+S1 == #count{J1:J1<=b, solution(T1,J1), solution(T,J), solution(T2,J1+b), T1<T, T<T2},
+S2 == #count{J1:J1>b, J1<=2*b, solution(T1,J1), solution(T,J), solution(T2,J1-b), T1<T, T<T2}.
+m(X) :- X == #max{Y,T:ms(T,Y)}.
 
 #show solution/2.
-%#show s/1.
+#show s/1.
+#show m/1.
