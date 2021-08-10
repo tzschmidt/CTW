@@ -11,14 +11,13 @@ atomiccon(5,6).
 atomiccon(7,5).
 % (c_l,c_i,c_l,c_j) -> (c_l < c_i) v (c_l < c_j)
 discon(6,1,6,2).
-disuccon(1,4).
+dirsuccon(1,4).
+
+softcon(5,1).
+softcon(3,7).
 
 % native ASP encoding
 jobNum(1..2*b+n).
-
-% atm not needed
-job(X,X+b) :- jobNum(X), X<=b.
-job(X,X):- jobNum(X), 2*b<X.
 
 % to improve
 1{solution(T,J) : jobNum(J)}1 :- jobNum(T).
@@ -31,7 +30,7 @@ job(X,X):- jobNum(X), 2*b<X.
 :- solution(T1,J1), solution(T2,J2), solution(T3,J3), discon(J1,J2,J1,J3), T1>T2, T1>T3.
 
 % Direct Successor Consraint
-:- solution(T1,J1), solution(T2,J2), disuccon(J1,J2), T1!=T2-1.
+:- solution(T1,J1), solution(T2,J2), dirsuccon(J1,J2), T1!=T2-1.
 
 % Optimal Solution
 s(0) :- b=0.
@@ -43,6 +42,19 @@ S1 == #count{J1:J1<=b, solution(T1,J1), solution(T,J), solution(T2,J1+b), T1<T, 
 S2 == #count{J1:J1>b, J1<=2*b, solution(T1,J1), solution(T,J), solution(T2,J1-b), T1<T, T<T2}.
 m(X) :- X == #max{Y,T:ms(T,Y)}.
 
+l(0) :- b=0.
+ls(J1,X) :- b!=0, solution(T1,J1), solution(T2,J1+b), X=|T1-T2|-1.
+l(X) :- X == #max{Y,J:ls(J,Y)}.
+
+sov(J1) :- solution(T1,J1), solution(T2,J2), softcon(J1,J2), T1>T2.
+n(X) :- X == #count{J:sov(J)}.
+
+cost(X) :- X=k**3*S+k**2*M+k*L+N, s(S), m(M), l(L), n(N).
+#minimize{X: X=k**3*S+k**2*M+k*L+N, s(S), m(M), l(L), n(N)}.
+
 #show solution/2.
 #show s/1.
 #show m/1.
+#show l/1.
+#show n/1.
+#show cost/1.
