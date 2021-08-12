@@ -1,16 +1,3 @@
-% test instance
-% num of 2-sided cables
-#const b=2.
-% num of 1-sided cables
-#const n=3.
-
-atomiccon(3,2).
-atomiccon(5,6).
-atomiccon(7,5).
-% (c_l,c_i,c_l,c_j) -> (c_l < c_i) v (c_l < c_j)
-discon(6,1,6,2).
-disuccon(1,4).
-
 % native ASP encoding
 jobNum(1..2*b+n).
 
