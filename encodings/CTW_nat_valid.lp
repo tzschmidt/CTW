@@ -1,5 +1,5 @@
 % native ASP encoding
-jobNum(1..2*b+n).
+jobNum(1..k).
 
 % to improve
 1{solution(T,J) : jobNum(J)}1 :- jobNum(T).

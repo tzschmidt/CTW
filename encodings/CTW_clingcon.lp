@@ -14,7 +14,7 @@ jobNum(1..k).
 % Direct Successor Consraint
 :- solution(T1,J1), solution(T2,J2), dirsuccon(J1,J2), T1!=T2-1.
 
-% Optimization
+% Optimal Solution
 s(0) :- b=0.
 s(X) :- b!=0, X == #count{J:solution(T1,J), solution(T2,J+b), |T1-T2|>1, J<=b}.
 
