@@ -1,7 +1,7 @@
 % native ASP encoding
 jobNum(1..k).
 
-% to improve
+% generation
 1{solution(T,J) : jobNum(J)}1 :- jobNum(T).
 :- solution(T1,J), solution(T2,J), T1!=T2.
 
@@ -32,7 +32,7 @@ sov(J1) :- solution(T1,J1), solution(T2,J2), softcon(J1,J2), T1>T2.
 n(X) :- X == #count{J:sov(J)}.
 
 cost(X) :- X=k**3*S+k**2*M+k*L+N, s(S), m(M), l(L), n(N).
-%#minimize{X: X=k**3*S+k**2*M+k*L+N, s(S), m(M), l(L), n(N)}.
+%#minimize{X: cost(X)}.
 #minimize{X@4: s(X)}.
 #minimize{X@3: m(X)}.
 #minimize{X@2: l(X)}.

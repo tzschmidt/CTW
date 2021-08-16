@@ -1,7 +1,7 @@
 % native ASP encoding
 jobNum(1..k).
 
-% to improve
+% generation
 1{solution(T,J) : jobNum(J)}1 :- jobNum(T).
 :- solution(T1,J), solution(T2,J), T1!=T2.
 
