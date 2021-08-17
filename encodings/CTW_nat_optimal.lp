@@ -9,9 +9,10 @@ jobNum(1..k).
 :- solution(T1,J1), solution(T2,J2), atomiccon(J1,J2), T1>T2.
 
 % Disjunctive Precedence Constraint
-:- solution(T1,J1), solution(T2,J2), solution(T3,J3), discon(J1,J2,J1,J3), T1>T2, T1>T3.
+%:- solution(T1,J1), solution(T2,J2), solution(T3,J3), discon(J1,J2,J1,J3), T1>T2, T1>T3.
+1{atomiccon(J1,J2); atomiccon(J1,J3)}2 :- discon(J1,J2,J1,J3).
 
-% Direct Successor Consraint
+% Direct Successor Constraint
 :- solution(T1,J1), solution(T2,J2), dirsuccon(J1,J2), T1!=T2-1.
 
 % Optimization

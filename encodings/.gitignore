@@ -1,3 +1,4 @@
 *.swp
 *~
-*test*
+*test*.lp
+*out*.txt
