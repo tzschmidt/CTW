@@ -11,7 +11,7 @@ jobNum(1..k).
 % Disjunctive Precedence Constraint
 :- solution(T1,J1), solution(T2,J2), solution(T3,J3), discon(J1,J2,J1,J3), T1>T2, T1>T3.
 
-% Direct Successor Consraint
+% Direct Successor Constraint
 :- solution(T1,J1), solution(T2,J2), disuccon(J1,J2), T1!=T2-1.
 
 #show solution/2.
