@@ -29,8 +29,8 @@ l(0) :- b=0.
 ls(J1,X) :- b!=0, solution(T1,J1), solution(T2,J1+b), X=|T1-T2|-1.
 l(X) :- X == #max{Y,J:ls(J,Y)}.
 
-sov(J1) :- solution(T1,J1), solution(T2,J2), softcon(J1,J2), T1>T2.
-n(X) :- X == #count{J:sov(J)}.
+sov(J1,J2) :- solution(T1,J1), solution(T2,J2), softcon(J1,J2), T1>T2.
+n(X) :- X == #count{J1,J2:sov(J1,J2)}.
 
 cost(X) :- X=k**3*S+k**2*M+k*L+N, s(S), m(M), l(L), n(N).
 %#minimize{X: cost(X)}.

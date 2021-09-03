@@ -44,3 +44,5 @@ n(J1,J2) :- &diff { time(J2)-time(J1) } <= -1, softcon(J1,J2).
 #minimize { kk*X@3 : m(X) }.
 #minimize { k*X@2 : l(X) }.
 #minimize { 1@1,J1,J2 : n(J1,J2) }.
+
+#show dl/2.
