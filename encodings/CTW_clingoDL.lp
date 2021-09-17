@@ -28,14 +28,22 @@ s(J) :- jobNum(J), J<=b, &diff { time(J)-time(J+b) } <= -2.
 % M
 m(J1,J2) :- jobNum(J1), jobNum(J2), J2<=b, &diff { time(J2)-time(J1) } <= -1, &diff { time(J1)-time(J2+b) } <= -1. 
 m(J1,J2) :- jobNum(J1), jobNum(J2), J2<=b, &diff { time(J1)-time(J2) } <= -1, &diff { time(J2+b)-time(J1) } <= -1.
-mc(J,X) :- X == #count { J2 : m(J,J2) }, jobNum(J), X>0.
-m(X) :- X == #max { Y,J : mc(J,Y) }.
+mc(J,X) :- X = #count { J2 : m(J,J2) }, jobNum(J), X>0.
+%m(X) :- X = #max { Y,J : mc(J,Y) }.
+
+mchain(X) :- mc(T,X).
+mchain(X-1) :- mchain(X), X > 0.
+m(X) :- mchain(X), not mchain(X+1).
 
 % L
 1{between(J,J+b,N-1) : jobNum(N), N<k}1 :- jobNum(J), J<=b.
 &diff { time(J)-time(J+b) } = -N-1 :- &diff { time(J)-time(J+b) } <= -1, jobNum(J), J<=b, between(J,J+b,N).
 &diff { time(J)-time(J+b) } = N+1 :- &diff { time(J+b)-time(J) } <= -1, jobNum(J), J<=b, between(J,J+b,N).
-l(X) :- X == #max { Y,J : between(J,J+b,Y) }.
+%l(X) :- X = #max { Y,J : between(J,J+b,Y) }.
+
+lchain(X) :- between(J,_,X).
+lchain(X-1) :- lchain(X), X > 0.
+l(X) :- lchain(X), not lchain(X+1).
 
 % N
 n(J1,J2) :- &diff { time(J2)-time(J1) } <= -1, softcon(J1,J2).
