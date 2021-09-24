@@ -21,9 +21,14 @@ s(J) :- jobNum(J), J<=b, solution(T1,J), solution(T2,J+b), |T1-T2| > 1.
 
 %-------------------
 m(0) :- b=0.
-ms(T,S1+S2) :- b!=0, jobNum(T),
-S1 = #count{J1:J1<=b, solution(T1,J1), solution(T,J), solution(T2,J1+b), T1<T, T<T2},
-S2 = #count{J1:J1>b, J1<=2*b, solution(T1,J1), solution(T,J), solution(T2,J1-b), T1<T, T<T2}.
+mcheck(T,J) :- jobNum(J), jobNum(T), J<=b, solution(T1,J), solution(T,_), solution(T2,J+b), T1<T, T<T2.
+mcheck(T,J) :- jobNum(J), jobNum(T), J<=b, solution(T1,J), solution(T,_), solution(T2,J+b), T2<T, T<T1.
+
+maux(T,1,0) :- not mcheck(T,1), jobNum(T).
+maux(T,1,1) :- mcheck(T,1), jobNum(T).
+maux(T,J,N) :- not mcheck(T,J),  maux(T,J-1,N), J=2..b.
+maux(T,J,N+1) :- mcheck(T,J),  maux(T,J-1,N), J=2..b.
+ms(T,X) :- maux(T,b,X).
 
 mchain(X) :- ms(T,X).
 mchain(X-1) :- mchain(X), X > 0.
@@ -41,7 +46,6 @@ l(X) :- lchain(X), not lchain(X+1).
 n(J1,J2) :- solution(T1,J1), solution(T2,J2), softcon(J1,J2), T1>T2.
 
 %-------------------
-%#minimize{kkk*S+kk*M+k*L+N: s(S), m(M), l(L), n(N)}.
 #minimize{kkk@4,J: s(J)}.
 #minimize{kk*X@3: m(X)}.
 #minimize{k*X@2: l(X)}.
