@@ -21,7 +21,7 @@ jobNum(1..k).
 &sum { s(J) } = 1 :- jobNum(J), J<=b, &sum { time(J); -1*time(J+b) } > 1.
 &sum { s(J) } = 1 :- jobNum(J), J<=b, &sum { time(J); -1*time(J+b) } < -1.
 &sum { s(J) } >= 0 :- jobNum(J), J<=b.
-&sum { s(J) : jobNum(J), J<=b} = s.
+&sum { s(J) : jobNum(J), J<=b} <= s.
 
 %-------------------
 % M
@@ -49,7 +49,7 @@ jobNum(1..k).
 % N
 &sum { n(J1,J2) } = 1 :- &sum { time(J1); -1*time(J2) } > 0, softcon(J1,J2).
 &sum { n(J1,J2) } >= 0 :- softcon(J1,J2).
-&sum { n(J1,J2) : softcon(J1,J2)} = n.
+&sum { n(J1,J2) : softcon(J1,J2)} <= n.
 
 %-------------------
 &sum { kkk*s ; kk*m ; k*l ; n } <= bound.
