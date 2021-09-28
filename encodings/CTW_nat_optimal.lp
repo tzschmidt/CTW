@@ -21,8 +21,8 @@ s(J) :- jobNum(J), J<=b, solution(T1,J), solution(T2,J+b), |T1-T2| > 1.
 
 %-------------------
 m(0) :- b=0.
-mcheck(T,J) :- jobNum(J), jobNum(T), J<=b, solution(T1,J), solution(T,_), solution(T2,J+b), T1<T, T<T2.
-mcheck(T,J) :- jobNum(J), jobNum(T), J<=b, solution(T1,J), solution(T,_), solution(T2,J+b), T2<T, T<T1.
+mcheck(T,J) :- jobNum(J), jobNum(T), J<=b, solution(T1,J), solution(T2,J+b), T1<T, T<T2.
+mcheck(T,J) :- jobNum(J), jobNum(T), J<=b, solution(T1,J), solution(T2,J+b), T2<T, T<T1.
 
 maux(T,1,0) :- not mcheck(T,1), jobNum(T).
 maux(T,1,1) :- mcheck(T,1), jobNum(T).
