@@ -24,17 +24,17 @@ help() {
 # Main program
 
 TOOLPATH=${0%/*}
-PATH=$TOOLPATH/..
-FLATPATH=$PATH/flatzingo
-TIMESTAMP=$PATH/tools/time_stamp.py
+DIRPATH=$TOOLPATH/..
+FLATPATH=$DIRPATH/flatzingo
+TIMESTAMP=$DIRPATH/tools/time_stamp.py
 TLIMIT=1800
 
 while getopts ":efh" option; do
     case $option in
 	e)
-	    for i in $PATH/encodings/*.lp; do
+	    for i in $DIRPATH/encodings/*.lp; do
 		ENCODINGBASE=${i##*/}
-		for j in $PATH/benchmarks/*.lp; do
+		for j in $DIRPATH/benchmarks/*.lp; do
 		    RESULTPATH=${j%.lp}.txt
 		    if [[ ${ENCODINGBASE:4:3} == "nat" ]]; then
 			solver="clingo"

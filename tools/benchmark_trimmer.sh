@@ -3,10 +3,10 @@
 # Help
 help() {
 	echo "Trims bigger minizinc benchmark instances into smaller ones, ranging from k=50 to 100."
-	echo "Requires the following file structure, here prj can be any directory."
+	echo "Requires the following file structure, where prj can be any directory."
 	echo "prj/tools/benchmark_trimmer.sh"
 	echo "prj/tools/benchmark_filter.rkt"
-	echo "prj/benchmarks/minizinc		Contains benchmarks, to be trimmed benchmarks should have prefix "pre"."
+	echo "prj/benchmarks/minizinc		Contains benchmarks, to be trimmed benchmarks should have prefix "pre_"."
 	echo
 	echo "Requires racket"
 	echo
@@ -18,7 +18,7 @@ help() {
 
 # Main program
 TOOLPATH=${0%/*}
-PATH=$TOOLPATH/..
+DIRPATH=$TOOLPATH/..
 while getopts ":h" option; do
 	case $option in
 		h) # display Help
@@ -30,11 +30,13 @@ while getopts ":h" option; do
 	esac
 done
 
-for i in $PATH/benchmarks/minizinc/pre*.dzn; do
+for i in $DIRPATH/benchmarks/minizinc/pre_*.dzn; do
+	NAME=${i##*/}
+	NEWNAME=${NAME:4}
 	for j in {50..100..10}; do
-		RESULTPATH=${i%.dzn}_k$j.dzn
+		RESULTPATH=$DIRPATH/benchmarks/minizinc/${NEWNAME%.dzn}_k$j.dzn
 		echo "Trimming ${i##*/} with k = $j ..."
-		Racket benchmark_filter $i $RESULTPATH $j $((j / 2)) 
+		racket $TOOLPATH/benchmark_filter.rkt $i $RESULTPATH $j $((j / 2)) 
 		echo "Done, result can be found in $RESULTPATH"
 	done
 done

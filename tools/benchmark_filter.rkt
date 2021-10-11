@@ -10,17 +10,17 @@
       "./A031_new.dzn"
       (second (vector->list (current-command-line-arguments)))))
 
-(define get-k
+(define input-k-string
   (if (vector-empty? (current-command-line-arguments))
-      10
+      "10"
       (third (vector->list (current-command-line-arguments)))))
 
 (define (k-string k)
   (string-append "k = " (number->string k) ";"))
 
-(define get-b
+(define input-b-string
   (if (vector-empty? (current-command-line-arguments))
-      5
+      "5"
       (fourth (vector->list (current-command-line-arguments)))))
 
 (define (b-string b)
@@ -69,7 +69,7 @@
     (append lines1 lines2 lines3)))
 
 ; execute programm
-(write-to-file output-file (new-lines get-k get-b input-lines))
+(write-to-file output-file (new-lines (string->number input-k-string) (string->number input-b-string) input-lines))
 
 ;(write-to-file "./test.txt" '("   1, 20|" "   1, 20, 33, 4|"))
 
