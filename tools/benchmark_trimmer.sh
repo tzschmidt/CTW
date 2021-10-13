@@ -33,7 +33,7 @@ done
 for i in $DIRPATH/benchmarks/minizinc/pre_*.dzn; do
 	NAME=${i##*/}
 	NEWNAME=${NAME:4}
-	for j in {50..100..10}; do
+	for j in {40..90..10}; do
 		RESULTPATH=$DIRPATH/benchmarks/minizinc/${NEWNAME%.dzn}_k$j.dzn
 		echo "Trimming ${i##*/} with k = $j ..."
 		racket $TOOLPATH/benchmark_filter.rkt $i $RESULTPATH $j $((j / 2)) 

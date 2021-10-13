@@ -42,10 +42,14 @@ while getopts ":efh" option; do
 			solver="clingcon"
 		    elif [[ ${ENCODINGBASE:4:8} == "clingoDL" ]]; then
 			solver="clingo-dl"
+		    else
+			solver="no_solver"
 		    fi
-		    echo "Solving ${j##*/} with ${i##*/} ..."
-		    $solver --time-limit=$TLIMIT $i $j | python $TIMESTAMP > $RESULTPATH
-		    echo "Done, result can be found in $RESULTPATH"
+		    if [[ $solver != "no_solver" ]]; then
+		    	echo "Solving ${j##*/} with ${i##*/} ..."
+		    	$solver --time-limit=$TLIMIT $i $j | python3 $TIMESTAMP > $RESULTPATH
+		    	echo "Done, result can be found in $RESULTPATH"
+		    fi
 		done
 	    done
 	    ;;
@@ -53,7 +57,7 @@ while getopts ":efh" option; do
 	    for i in $FLATPATH/benchmarks/*.lp; do
 		RESULTPATH=${i%.lp}.txt
 		echo "Solving ${i##*/} with flatzingo ..."
-		#clingcon --time-limit=$TLIMIT $FLATPATH/encoding.lp $FLATPATH/types.lp $i | python $TIMESTAMP > $RESULTPATH
+		clingcon --time-limit=$TLIMIT $FLATPATH/encoding.lp $FLATPATH/types.lp $i | python3 $TIMESTAMP > $RESULTPATH
 		echo "Done, result can be found in $RESULTPATH"
 	    done
 	    ;;
