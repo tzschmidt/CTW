@@ -6,13 +6,13 @@
 ; get input file
 (define input-file
   (if (vector-empty? (current-command-line-arguments))
-      "./A031.dzn"
+      "../examples/A031.dzn"
       (first (vector->list (current-command-line-arguments)))))
 
 ; get output file
 (define output-file
   (if (vector-empty? (current-command-line-arguments))
-      "./A031_new.dzn"
+      "../examples/A031_new.dzn"
       (second (vector->list (current-command-line-arguments)))))
 
 ; get new k as string
