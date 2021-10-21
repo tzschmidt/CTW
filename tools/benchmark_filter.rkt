@@ -11,13 +11,13 @@
 
 ; get output file
 (define output-file
-  (if (vector-empty? (current-command-line-arguments))
+  (if (< (vector-length (current-command-line-arguments)) 2)
       "../examples/A031_new.dzn"
       (second (vector->list (current-command-line-arguments)))))
 
 ; get new k as string
 (define input-k-string
-  (if (vector-empty? (current-command-line-arguments))
+  (if (< (vector-length (current-command-line-arguments)) 3)
       "10"
       (third (vector->list (current-command-line-arguments)))))
 

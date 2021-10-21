@@ -3,26 +3,26 @@
 
 (define output-file
   (if (vector-empty? (current-command-line-arguments))
-      "../examples/A073_test.png"
+      "../examples/A031.png"
       (first (vector->list (current-command-line-arguments)))))
 
 (define input-file0
-  (if (vector-empty? (current-command-line-arguments))
-      "../examples/A073_k40_clingoDL_V1.txt"
+  (if (< (vector-length (current-command-line-arguments)) 2)
+      "../examples/A031_clingcon.txt"
       (second (vector->list (current-command-line-arguments)))))
 
 (define input-file1
-  (if (vector-empty? (current-command-line-arguments))
-      "../examples/A073_k50_clingoDL_V1.txt"
+  (if (< (vector-length (current-command-line-arguments)) 3)
+     #f
       (third (vector->list (current-command-line-arguments)))))
 
 (define input-file2
-  (if (vector-empty? (current-command-line-arguments))
+  (if (< (vector-length (current-command-line-arguments)) 4)
       #f
       (fourth (vector->list (current-command-line-arguments)))))
 
 (define input-file3
-  (if (vector-empty? (current-command-line-arguments))
+  (if (< (vector-length (current-command-line-arguments)) 5)
       #f
       (fifth (vector->list (current-command-line-arguments)))))
 
@@ -35,7 +35,16 @@
 (define (get-input-file x)
   (list-ref input-files-list x))
 
-  
+; get encoding name from file
+(define (get-name-line file)
+  (car (filter (lambda (line) (regexp-match #rx"\\.lp \\.\\.\\." line))
+          (sequence->list (in-lines file)))))
+
+(define (get-name file)
+  (let* ([nameline (call-with-input-file file get-name-line)]
+         [name (second (regexp-match #px"\\/([\\w]+)\\.lp" nameline))])
+    (if (string=? "encoding" name) "flatzingo" name)))
+
 ; get all the lines with optimization values from a file
 (define (get-opt-values file)
   (filter (lambda (line) (regexp-match #rx"Optimization:" line))
@@ -94,13 +103,20 @@
   (check-equal? (beautify-plot-values '()) '())
   (check-equal? (beautify-plot-values '((1 2))) '((1 2))))
 
-(define (lines-for-plot x)
-  (let* ([file (get-input-file x)])
-    (lines (beautify-plot-values (filtered-plot-values file))
-           #:x-min (* 0.9 (first (first (filtered-plot-values file))))
-           #:x-max (* 1.1 (first (last (filtered-plot-values file))))
-           #:y-min (* (apply min (opt-values file)) 0.9)
-           #:y-max (* (apply max (opt-values file)) 1.1))))
+; plotting
+(define (lines-for-plot x style)
+  (let* ([file (get-input-file x)]
+         [values (filtered-plot-values file)]
+         [checked-values (if (null? values) (list (list 0 0)) values)]
+         [pre-opt-values (opt-values file)]
+         [checked-opt-values (if (null? pre-opt-values) (list 0) pre-opt-values)])
+    (lines (beautify-plot-values checked-values)
+           #:x-min (* 0.9 (first (first checked-values)))
+           #:x-max (* 1.1 (first (last checked-values)))
+           #:y-min (* (apply min checked-opt-values) 0.9)
+           #:y-max (* (apply max  checked-opt-values) 1.1)
+           #:label (get-name file)
+           #:style style)))
 
 (define (plot-lines x title)
   (plot-file
@@ -108,24 +124,14 @@
    #:y-label "optimization value"
    #:title title
    (case x
-     [(0) (list (lines-for-plot 0))]
-     [(1) (list (lines-for-plot 0) (lines-for-plot 1))]
-     [(2) (list (lines-for-plot 0) (lines-for-plot 1) (lines-for-plot 2))]
-     [(3) (list (lines-for-plot 0) (lines-for-plot 1) (lines-for-plot 2) (lines-for-plot 3))])
-   output-file))
+     [(0) (list (lines-for-plot 0 'solid))]
+     [(1) (list (lines-for-plot 0 'solid) (lines-for-plot 1 'long-dash))]
+     [(2) (list (lines-for-plot 0 'solid) (lines-for-plot 1 'long-dash) (lines-for-plot 2 'short-dash))]
+     [(3) (list (lines-for-plot 0 'solid) (lines-for-plot 1 'long-dash) (lines-for-plot 2 'short-dash) (lines-for-plot 3 'dot))])
+   output-file 'png))
 
 (define (plot-files)
-  (case (length input-files-list)
-    [(1) (plot-lines 0 (path->string (file-name-from-path (get-input-file 0))))]
-    [(2) (plot-lines 1 (string-append (path->string (file-name-from-path (get-input-file 0)))
-                            " and " (path->string (file-name-from-path (get-input-file 1)))))]
-    [(3) (plot-lines 2 (string-append (path->string (file-name-from-path (get-input-file 0)))
-                            ", " (path->string (file-name-from-path (get-input-file 1)))
-                            " and " (path->string (file-name-from-path (get-input-file 2)))))]
-    [(4) (plot-lines 3 (string-append (path->string (file-name-from-path (get-input-file 0)))
-                            ", " (path->string (file-name-from-path (get-input-file 1)))
-                            ", " (path->string (file-name-from-path (get-input-file 2)))
-                            " and " (path->string (file-name-from-path (get-input-file 3)))))]))
+  (plot-lines (- (length input-files-list) 1) (second (regexp-match #px"\\/([\\w]+)\\.png" output-file))))
 
 (plot-files)
    
