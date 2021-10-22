@@ -3,7 +3,7 @@
 
 (define output-file
   (if (vector-empty? (current-command-line-arguments))
-      "../examples/A031.png"
+      "../examples/A031_test.png"
       (first (vector->list (current-command-line-arguments)))))
 
 (define input-file0
@@ -13,7 +13,7 @@
 
 (define input-file1
   (if (< (vector-length (current-command-line-arguments)) 3)
-     #f
+      #f
       (third (vector->list (current-command-line-arguments)))))
 
 (define input-file2
@@ -47,7 +47,7 @@
 
 ; get all the lines with optimization values from a file
 (define (get-opt-values file)
-  (filter (lambda (line) (regexp-match #rx"Optimization:" line))
+  (filter (lambda (line) (regexp-match #rx"(?:Optimization|Cost):" line))
           (sequence->list (in-lines file))))
   
 (define (relevant-lines file)
@@ -55,7 +55,7 @@
 
 (define (plot-values file)
   (for/list ([line (relevant-lines file)])
-    (let* ([match (regexp-match #px"(\\d*):(\\d{2})\\.(\\d{1,3}) Optimization: ([\\d ]+)" line)]
+    (let* ([match (regexp-match #px"(\\d*):(\\d{2})\\.(\\d{1,3}) (?:Optimization|Cost): ([\\d ]+)" line)]
            [time (+ (* (string->number (second match)) 60 1000)
                               (* (string->number (third match)) 1000)
                               (string->number (fourth match)))]
