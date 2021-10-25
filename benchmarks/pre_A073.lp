@@ -1,4 +1,4 @@
-% benchmark A073
+% benchmark pre_A073
 % num of cables
 #const k=198.
 % num of 2-sided cables

@@ -1,4 +1,4 @@
-% benchmark R189
+% benchmark pre_R189
 % num of cables
 #const k=100.
 % num of 2-sided cables
