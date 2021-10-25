@@ -3,12 +3,12 @@
 
 (define output-file
   (if (vector-empty? (current-command-line-arguments))
-      "../examples/A031_test.png"
+      "../examples/R196_test.png"
       (first (vector->list (current-command-line-arguments)))))
 
 (define input-file0
   (if (< (vector-length (current-command-line-arguments)) 2)
-      "../examples/A031_clingcon.txt"
+      "../examples/R196_k50_nat_optimal_V3-V1.txt"
       (second (vector->list (current-command-line-arguments)))))
 
 (define input-file1
@@ -42,7 +42,7 @@
 
 (define (get-name file)
   (let* ([nameline (call-with-input-file file get-name-line)]
-         [name (second (regexp-match #px"\\/([\\w]+)\\.lp" nameline))])
+         [name (second (regexp-match #px"\\/([\\w\\-]+)\\.lp" nameline))])
     (if (string=? "encoding" name) "flatzingo" name)))
 
 ; get all the lines with optimization values from a file
