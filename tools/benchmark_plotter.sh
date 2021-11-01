@@ -13,7 +13,7 @@ help() {
     echo
     echo "Requires racket"
     echo
-    echo "Syntax: benchmark_plotter.sh [-h] <solver> [<solver>] [<solver>] [<solver>]"
+    echo "Syntax: benchmark_plotter.sh [-h] <log?> <solver> [<solver>] [<solver>] [<solver>]"
     echo "options:"
     echo "h    Print this Help."
     echo
@@ -30,32 +30,32 @@ plot() {
 	    0) # no flatzingo
 		case $2 in
 		    1)
-			racket $TOOLPATH/plot_result.rkt ${benchmark}.png ${benchmark}_${3}.txt
+			racket $TOOLPATH/plot_result.rkt $3 ${benchmark}.png ${benchmark}_${4}.txt
 			;;
 		    2)
-			racket $TOOLPATH/plot_result.rkt ${benchmark}.png ${benchmark}_${3}.txt ${benchmark}_${4}.txt
+			racket $TOOLPATH/plot_result.rkt $3 ${benchmark}.png ${benchmark}_${4}.txt ${benchmark}_${5}.txt
 			;;
 		    3)
-			racket $TOOLPATH/plot_result.rkt ${benchmark}.png ${benchmark}_${3}.txt ${benchmark}_${4}.txt ${benchmark}_${5}.txt
+			racket $TOOLPATH/plot_result.rkt $3 ${benchmark}.png ${benchmark}_${4}.txt ${benchmark}_${5}.txt ${benchmark}_${6}.txt
 			;;
 		    4)
-			racket $TOOLPATH/plot_result.rkt ${benchmark}.png ${benchmark}_${3}.txt ${benchmark}_${4}.txt ${benchmark}_${5}.txt ${benchmark}_${6}.txt
+			racket $TOOLPATH/plot_result.rkt $3 ${benchmark}.png ${benchmark}_${4}.txt ${benchmark}_${5}.txt ${benchmark}_${6}.txt ${benchmark}_${7}.txt
 			;;
 		esac
 		;;
 	    1) # flatzingo
 		case $2 in
 		    1)
-			racket $TOOLPATH/plot_result.rkt ${benchmark}.png ${flatbenchmark}_flat.txt
+			racket $TOOLPATH/plot_result.rkt $3 ${benchmark}.png ${flatbenchmark}_flat.txt
 			;;
 		    2)
-			racket $TOOLPATH/plot_result.rkt ${benchmark}.png ${flatbenchmark}_flat.txt ${benchmark}_${4}.txt
+			racket $TOOLPATH/plot_result.rkt $3 ${benchmark}.png ${flatbenchmark}_flat.txt ${benchmark}_${5}.txt
 			;;
 		    3)
-			racket $TOOLPATH/plot_result.rkt ${benchmark}.png ${flatbenchmark}_flat.txt ${benchmark}_${4}.txt ${benchmark}_${5}.txt
+			racket $TOOLPATH/plot_result.rkt $3 ${benchmark}.png ${flatbenchmark}_flat.txt ${benchmark}_${5}.txt ${benchmark}_${6}.txt
 			;;
 		    4)
-			racket $TOOLPATH/plot_result.rkt ${benchmark}.png ${flatbenchmark}_flat.txt ${benchmark}_${4}.txt ${benchmark}_${5}.txt ${benchmark}_${6}.txt
+			racket $TOOLPATH/plot_result.rkt $3 ${benchmark}.png ${flatbenchmark}_flat.txt ${benchmark}_${5}.txt ${benchmark}_${6}.txt ${benchmark}_${7}.txt
 			;;
 		esac
 		;;
@@ -78,28 +78,28 @@ while getopts ":h" option; do
     esac
 done
 
-if [[ -n $1 ]]; then
-    if [[ $1 == "flat" ]]; then
+if [[ -n $2 ]]; then
+    if [[ $2 == "flat" ]]; then
 	flat=1
     else
 	flat=0
     fi
-    if [[ -n $2 ]]; then
-	if [[ -n $3 ]]; then
-	    if [[ -n $4 ]]; then
-		plot $flat 4 $1 $2 $3 $4
+    if [[ -n $3 ]]; then
+	if [[ -n $4 ]]; then
+	    if [[ -n $5 ]]; then
+		plot $flat 4 $1 $2 $3 $4 $5
 		echo "Finished."
 		exit
 	    fi
-	    plot $flat 3 $1 $2 $3
+	    plot $flat 3 $1 $2 $3 $4
 	    echo "Finished."
 	    exit
 	fi
-	plot $flat 2 $1 $2
+	plot $flat 2 $1 $2 $3
     	echo "Finished."
 	exit
     fi
-    plot $flat 1 $1
+    plot $flat 1 $1 $2
     echo "Finished."
     exit
 fi

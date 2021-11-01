@@ -1,30 +1,35 @@
 #lang racket
 (require plot)
 
-(define output-file
+(define log-par
   (if (vector-empty? (current-command-line-arguments))
-      "../examples/R196_test.png"
-      (first (vector->list (current-command-line-arguments)))))
+      0
+      (string->number (first (vector->list (current-command-line-arguments))))))
 
-(define input-file0
-  (if (< (vector-length (current-command-line-arguments)) 2)
-      "../examples/R196_k50_nat_optimal_V3-V1.txt"
+(define output-file
+   (if (< (vector-length (current-command-line-arguments)) 2)
+      "../examples/A031_test.png"
       (second (vector->list (current-command-line-arguments)))))
 
-(define input-file1
+(define input-file0
   (if (< (vector-length (current-command-line-arguments)) 3)
-      #f
+      "../examples/A031_clingcon.txt"
       (third (vector->list (current-command-line-arguments)))))
 
-(define input-file2
+(define input-file1
   (if (< (vector-length (current-command-line-arguments)) 4)
       #f
       (fourth (vector->list (current-command-line-arguments)))))
 
-(define input-file3
+(define input-file2
   (if (< (vector-length (current-command-line-arguments)) 5)
       #f
       (fifth (vector->list (current-command-line-arguments)))))
+
+(define input-file3
+  (if (< (vector-length (current-command-line-arguments)) 6)
+      #f
+      (sixth (vector->list (current-command-line-arguments)))))
 
 (define input-files-list
   (let* ([file01 (if input-file1 (list input-file0 input-file1) (list input-file0))]
@@ -107,9 +112,9 @@
 (define (lines-for-plot x style)
   (let* ([file (get-input-file x)]
          [values (filtered-plot-values file)]
-         [checked-values (if (null? values) (list (list 0 0)) values)]
+         [checked-values (if (null? values) (list (list 0.1 0.1)) values)]
          [pre-opt-values (opt-values file)]
-         [checked-opt-values (if (null? pre-opt-values) (list 0) pre-opt-values)])
+         [checked-opt-values (if (null? pre-opt-values) (list 0.1) pre-opt-values)])
     (lines (beautify-plot-values checked-values)
            #:x-min (* 0.9 (first (first checked-values)))
            #:x-max (* 1.1 (first (last checked-values)))
@@ -118,20 +123,30 @@
            #:label (get-name file)
            #:style style)))
 
-(define (plot-lines x title)
+(define (plot-lines x title output)
   (plot-file
-   #:x-label "time in ms"
-   #:y-label "optimization value"
-   #:title title
-   (case x
-     [(0) (list (lines-for-plot 0 'solid))]
-     [(1) (list (lines-for-plot 0 'solid) (lines-for-plot 1 'long-dash))]
-     [(2) (list (lines-for-plot 0 'solid) (lines-for-plot 1 'long-dash) (lines-for-plot 2 'short-dash))]
-     [(3) (list (lines-for-plot 0 'solid) (lines-for-plot 1 'long-dash) (lines-for-plot 2 'short-dash) (lines-for-plot 3 'dot))])
-   output-file 'png))
+                 #:x-label "time in ms"
+                 #:y-label "optimization value"
+                 #:title title
+                 (case x
+                   [(0) (list (lines-for-plot 0 'solid))]
+                   [(1) (list (lines-for-plot 0 'solid) (lines-for-plot 1 'long-dash))]
+                   [(2) (list (lines-for-plot 0 'solid) (lines-for-plot 1 'long-dash) (lines-for-plot 2 'dot-dash))]
+                   [(3) (list (lines-for-plot 0 'solid) (lines-for-plot 1 'long-dash) (lines-for-plot 2 'dot-dash) (lines-for-plot 3 'dot))])
+                 output 'png))
+
+(define (plot-lines-config x title output)
+  (if (= 1 log-par) (parameterize ([plot-y-transform log-transform]
+                 ;[plot-x-far-axis? #f] ; no axis at top
+                 ;[plot-y-far-axis? #f] ; no axis right
+                 [plot-y-ticks (log-ticks #:number 8)]
+                 ;[plot-y-far-ticks (linear-ticks #:number 6)]
+                 [plot-tick-size 5])
+                (plot-lines x title output))
+      (plot-lines x title output)))
 
 (define (plot-files)
-  (plot-lines (- (length input-files-list) 1) (second (regexp-match #px"\\/([\\w]+)\\.png" output-file))))
+  (plot-lines-config (- (length input-files-list) 1) (second (regexp-match #px"\\/([\\w]+)\\.png" output-file)) output-file))
 
 (plot-files)
    
