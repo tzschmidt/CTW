@@ -1,0 +1,10 @@
+00:00.0 clingo-dl version 1.3.0
+00:00.1 Reading from tools/../encodings/CTW_clingoDL_V1.lp ...
+28:25.250 Solving...
+29:59.993 UNKNOWN
+29:59.993 
+29:59.993 TIME LIMIT   : 1
+29:59.993 Models       : 0+
+29:59.993 Calls        : 1
+29:59.993 Time         : 1800.000s (Solving: 94.74s 1st Model: 0.00s Unsat: 0.00s)
+29:59.993 CPU Time     : 1799.941s

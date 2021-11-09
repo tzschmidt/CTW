@@ -1,0 +1,9 @@
+00:00.53 clingo version 5.5.1
+00:00.53 Reading from tools/../encodings/CTW_nat_optimal.lp ...
+30:01.336 UNKNOWN
+30:02.379 
+30:02.380 TIME LIMIT   : 1
+30:02.384 Models       : 0+
+30:02.384 Calls        : 1
+30:02.387 Time         : 1800.080s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+30:02.393 CPU Time     : 328.418s

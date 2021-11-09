@@ -1,0 +1,60 @@
+00:00.0 clingo version 5.5.1
+00:00.0 Reading from ./tools/../encodings/CTW_nat_optimal.lp ...
+00:00.843 Solving...
+00:00.888 Answer: 1
+00:00.889 solution(5,2) solution(13,1) solution(1,3) solution(4,4) solution(24,6) solution(21,5) solution(29,8) solution(23,9) solution(25,10) solution(27,11) solution(28,23) solution(22,13) solution(17,14) solution(14,15) solution(2,16) solution(15,17) solution(12,12) solution(10,18) solution(3,19) solution(6,20) solution(7,21) solution(9,22) n(10) solution(8,24) solution(16,25) solution(18,26) solution(19,27) solution(11,28) solution(26,29) solution(20,30) solution(30,7) l(20) m(9) s(13)
+00:00.889 Optimization: 351000 8100 600 10
+00:16.939 Answer: 2
+00:16.939 solution(9,2) solution(19,1) solution(10,3) solution(15,4) solution(24,6) solution(23,5) solution(28,8) solution(22,9) solution(26,10) solution(29,11) solution(27,23) solution(17,13) solution(13,14) solution(14,15) solution(18,16) solution(21,17) solution(16,12) solution(11,18) solution(7,19) solution(5,20) solution(4,21) solution(12,22) n(11) solution(1,24) solution(3,25) solution(6,26) solution(8,27) solution(2,28) solution(25,29) solution(20,30) solution(30,7) l(22) m(11) s(12)
+00:16.939 Optimization: 324000 9900 660 11
+00:17.85 Answer: 3
+00:17.85 solution(15,2) solution(25,1) solution(14,3) solution(11,4) solution(23,6) solution(20,5) solution(27,8) solution(28,7) solution(24,9) solution(21,10) solution(22,11) solution(29,23) solution(19,13) solution(12,14) solution(9,15) solution(2,16) solution(5,17) solution(17,12) solution(13,18) solution(10,19) solution(7,20) solution(6,21) solution(8,22) n(10) solution(1,24) solution(4,25) solution(16,26) solution(18,27) solution(3,28) solution(30,29) solution(26,30) l(22) m(10) s(12)
+00:17.85 Optimization: 324000 9000 660 10
+00:36.163 Answer: 4
+00:36.163 solution(8,2) solution(16,1) solution(5,3) solution(26,6) solution(25,5) solution(23,8) solution(20,7) solution(27,9) solution(28,10) solution(29,11) solution(15,23) solution(24,13) solution(22,14) solution(21,15) solution(12,16) solution(2,17) solution(14,12) solution(6,18) solution(10,19) solution(11,20) solution(18,21) solution(19,22) n(10) solution(1,4) solution(3,24) solution(7,25) solution(9,26) solution(13,27) solution(4,28) solution(30,29) solution(17,30) l(23) m(8) s(12)
+00:36.163 Optimization: 324000 7200 690 10
+00:36.172 Answer: 5
+00:36.172 solution(8,2) solution(13,1) solution(5,3) solution(27,6) solution(25,5) solution(23,8) solution(21,7) solution(26,9) solution(28,10) solution(29,11) solution(16,23) solution(24,13) solution(22,14) solution(20,15) solution(12,16) solution(2,17) solution(14,12) solution(6,18) solution(10,19) solution(11,20) solution(18,21) solution(19,22) n(10) solution(1,4) solution(3,24) solution(7,25) solution(9,26) solution(15,27) solution(4,28) solution(30,29) solution(17,30) l(22) m(8) s(12)
+00:36.172 Optimization: 324000 7200 660 10
+00:36.173 Answer: 6
+00:36.173 solution(8,2) solution(13,1) solution(5,3) solution(27,6) solution(25,5) solution(23,8) solution(21,7) solution(24,9) solution(28,10) solution(29,11) solution(16,23) solution(26,13) solution(22,14) solution(20,15) solution(12,16) solution(2,17) solution(14,12) solution(6,18) solution(10,19) solution(11,20) solution(18,21) solution(19,22) n(10) solution(1,4) solution(3,24) solution(7,25) solution(9,26) solution(15,27) solution(4,28) solution(30,29) solution(17,30) l(21) m(8) s(12)
+00:36.173 Optimization: 324000 7200 630 10
+00:36.210 Answer: 7
+00:36.210 solution(8,2) solution(16,1) solution(5,3) solution(26,6) solution(25,5) solution(23,8) solution(21,7) solution(27,9) solution(28,10) solution(29,11) solution(30,23) solution(24,13) solution(22,14) solution(18,15) solution(12,16) solution(2,17) solution(14,12) solution(6,18) solution(10,19) solution(11,20) solution(15,21) solution(17,22) n(11) solution(1,4) solution(3,24) solution(7,25) solution(9,26) solution(13,27) solution(4,28) solution(20,29) solution(19,30) l(23) m(7) s(12)
+00:36.210 Optimization: 324000 6300 690 11
+00:36.211 Answer: 8
+00:36.211 solution(8,2) solution(16,1) solution(5,3) solution(27,6) solution(25,5) solution(23,8) solution(21,7) solution(26,9) solution(28,10) solution(29,11) solution(30,23) solution(24,13) solution(22,14) solution(18,15) solution(12,16) solution(2,17) solution(14,12) solution(6,18) solution(10,19) solution(11,20) solution(15,21) solution(17,22) n(11) solution(1,4) solution(3,24) solution(7,25) solution(9,26) solution(13,27) solution(4,28) solution(20,29) solution(19,30) l(22) m(7) s(12)
+00:36.211 Optimization: 324000 6300 660 11
+00:36.334 Answer: 9
+00:36.334 solution(8,2) solution(13,1) solution(5,3) solution(26,6) solution(25,5) solution(23,8) solution(21,7) solution(27,9) solution(28,10) solution(29,11) solution(30,23) solution(24,13) solution(22,14) solution(18,15) solution(12,16) solution(2,17) solution(14,12) solution(6,18) solution(10,19) solution(11,20) solution(16,21) solution(17,22) n(11) solution(1,4) solution(3,24) solution(7,25) solution(9,26) solution(15,27) solution(4,28) solution(20,29) solution(19,30) l(23) m(7) s(11)
+00:36.334 Optimization: 297000 6300 690 11
+00:36.342 Answer: 10
+00:36.342 solution(8,2) solution(13,1) solution(5,3) solution(27,6) solution(25,5) solution(23,8) solution(21,7) solution(26,9) solution(28,10) solution(29,11) solution(30,23) solution(24,13) solution(22,14) solution(18,15) solution(12,16) solution(2,17) solution(14,12) solution(6,18) solution(10,19) solution(11,20) solution(16,21) solution(17,22) n(11) solution(1,4) solution(3,24) solution(7,25) solution(9,26) solution(15,27) solution(4,28) solution(20,29) solution(19,30) l(22) m(7) s(11)
+00:36.342 Optimization: 297000 6300 660 11
+00:36.532 Answer: 11
+00:36.532 solution(13,1) solution(1,2) solution(5,3) solution(7,4) solution(26,6) solution(25,5) solution(23,8) solution(21,7) solution(27,9) solution(28,10) solution(29,11) solution(30,23) solution(24,13) solution(22,14) solution(18,15) solution(12,16) solution(2,17) solution(14,12) solution(6,18) solution(10,19) solution(11,20) solution(16,21) solution(17,22) n(13) solution(3,24) solution(8,25) solution(9,26) solution(15,27) solution(4,28) solution(20,29) solution(19,30) l(23) m(7) s(10)
+00:36.532 Optimization: 270000 6300 690 13
+00:36.554 Answer: 12
+00:36.554 solution(8,2) solution(13,1) solution(5,3) solution(26,6) solution(25,5) solution(23,8) solution(20,7) solution(27,9) solution(28,10) solution(29,11) solution(22,23) solution(24,13) solution(21,14) solution(18,15) solution(12,16) solution(2,17) solution(14,12) solution(6,18) solution(10,19) solution(11,20) solution(16,21) solution(17,22) n(10) solution(1,4) solution(3,24) solution(7,25) solution(9,26) solution(15,27) solution(4,28) solution(30,29) solution(19,30) l(23) m(7) s(10)
+00:36.554 Optimization: 270000 6300 690 10
+02:39.468 Answer: 13
+02:39.468 solution(3,1) solution(1,2) solution(12,3) solution(13,4) solution(27,6) solution(28,5) solution(24,8) solution(18,7) solution(25,9) solution(29,10) solution(30,11) solution(23,23) solution(26,13) solution(22,14) solution(20,15) solution(4,16) solution(11,17) solution(15,12) solution(10,18) solution(8,19) solution(9,20) solution(14,21) solution(19,22) n(11) solution(2,24) solution(6,25) solution(7,26) solution(16,27) solution(5,28) solution(21,29) solution(17,30) l(22) m(7) s(10)
+02:39.468 Optimization: 270000 6300 660 11
+02:39.479 Answer: 14
+02:39.479 solution(3,1) solution(1,2) solution(12,3) solution(13,4) solution(27,6) solution(28,5) solution(24,8) solution(18,7) solution(25,9) solution(29,10) solution(30,11) solution(23,23) solution(26,13) solution(21,14) solution(20,15) solution(4,16) solution(10,17) solution(15,12) solution(11,18) solution(8,19) solution(9,20) solution(14,21) solution(19,22) n(11) solution(2,24) solution(6,25) solution(7,26) solution(16,27) solution(5,28) solution(22,29) solution(17,30) l(22) m(7) s(9)
+02:39.479 Optimization: 243000 6300 660 11
+02:39.871 Answer: 15
+02:39.871 solution(3,1) solution(1,2) solution(9,3) solution(13,4) solution(27,6) solution(28,5) solution(24,8) solution(18,7) solution(25,9) solution(29,10) solution(30,11) solution(23,23) solution(26,13) solution(22,14) solution(20,15) solution(4,16) solution(11,17) solution(15,12) solution(8,18) solution(10,19) solution(12,20) solution(14,21) solution(19,22) n(10) solution(2,24) solution(6,25) solution(7,26) solution(16,27) solution(5,28) solution(21,29) solution(17,30) l(22) m(7) s(9)
+02:39.871 Optimization: 243000 6300 660 10
+02:40.73 Answer: 16
+02:40.73 solution(3,1) solution(1,2) solution(12,3) solution(13,4) solution(30,6) solution(27,5) solution(24,8) solution(19,7) solution(25,9) solution(28,10) solution(29,11) solution(23,23) solution(26,13) solution(22,14) solution(20,15) solution(2,16) solution(10,17) solution(15,12) solution(11,18) solution(8,19) solution(9,20) solution(14,21) solution(18,22) n(12) solution(4,24) solution(6,25) solution(7,26) solution(16,27) solution(5,28) solution(21,29) solution(17,30) l(21) m(7) s(9)
+02:40.73 Optimization: 243000 6300 630 12
+29:59.990 SATISFIABLE
+29:59.990 
+29:59.990 TIME LIMIT   : 1
+29:59.990 Models       : 16+
+29:59.990   Optimum    : unknown
+29:59.990 Optimization : 243000 6300 630 12
+29:59.990 Calls        : 1
+29:59.990 Time         : 1800.000s (Solving: 1799.15s 1st Model: 0.05s Unsat: 0.00s)
+29:59.990 CPU Time     : 1799.969s

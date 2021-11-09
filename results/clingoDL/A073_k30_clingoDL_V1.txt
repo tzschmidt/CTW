@@ -1,0 +1,152 @@
+00:00.0 clingo-dl version 1.3.0
+00:00.0 Reading from ./tools/../encodings/CTW_clingoDL_V1.lp ...
+00:00.780 Solving...
+00:04.95 Answer: 1
+00:04.95 dl(time(3),19) dl(time(2),20) dl(time(4),15) dl(time(5),18) dl(time(6),24) dl(time(7),25) dl(time(8),26) dl(time(9),27) dl(time(10),28) dl(time(11),29) dl(time(12),21) dl(time(1),22) dl(time(13),30) dl(time(15),10) dl(time(14),11) dl(time(16),14) dl(time(17),9) dl(time(18),8) dl(time(19),7) dl(time(20),5) dl(time(21),3) dl(time(22),2) dl(time(23),1) dl(time(24),4) dl(time(25),6) dl(time(26),12) dl(time(27),16) dl(time(28),13) dl(time(29),17) dl(time(30),23)
+00:04.95 Optimization: 405000 11700 720 12
+00:04.186 Answer: 2
+00:04.186 dl(time(3),19) dl(time(2),20) dl(time(4),15) dl(time(5),18) dl(time(6),24) dl(time(7),25) dl(time(8),26) dl(time(9),27) dl(time(10),28) dl(time(11),29) dl(time(12),21) dl(time(1),22) dl(time(13),30) dl(time(15),10) dl(time(14),11) dl(time(16),17) dl(time(17),9) dl(time(18),8) dl(time(19),7) dl(time(20),5) dl(time(21),3) dl(time(22),2) dl(time(23),1) dl(time(24),4) dl(time(25),6) dl(time(26),12) dl(time(27),16) dl(time(28),13) dl(time(29),14) dl(time(30),23)
+00:04.186 Optimization: 405000 10800 720 13
+00:04.205 Answer: 3
+00:04.205 dl(time(3),19) dl(time(2),20) dl(time(4),15) dl(time(5),18) dl(time(6),24) dl(time(7),25) dl(time(8),26) dl(time(9),27) dl(time(10),28) dl(time(11),29) dl(time(12),21) dl(time(1),22) dl(time(13),30) dl(time(15),10) dl(time(14),11) dl(time(16),17) dl(time(17),9) dl(time(18),8) dl(time(19),7) dl(time(20),5) dl(time(21),3) dl(time(22),1) dl(time(23),2) dl(time(24),4) dl(time(25),6) dl(time(26),12) dl(time(27),16) dl(time(28),13) dl(time(29),14) dl(time(30),23)
+00:04.205 Optimization: 405000 10800 690 12
+00:04.242 Answer: 4
+00:04.242 dl(time(3),16) dl(time(2),19) dl(time(4),15) dl(time(5),18) dl(time(6),24) dl(time(7),25) dl(time(8),26) dl(time(9),27) dl(time(10),28) dl(time(11),29) dl(time(12),21) dl(time(1),22) dl(time(13),30) dl(time(15),10) dl(time(14),11) dl(time(16),17) dl(time(17),9) dl(time(18),8) dl(time(19),7) dl(time(20),5) dl(time(21),3) dl(time(22),2) dl(time(23),1) dl(time(24),4) dl(time(25),6) dl(time(26),12) dl(time(27),20) dl(time(28),13) dl(time(29),14) dl(time(30),23)
+00:04.242 Optimization: 378000 10800 720 12
+00:04.252 Answer: 5
+00:04.252 dl(time(3),16) dl(time(2),17) dl(time(4),15) dl(time(5),18) dl(time(6),24) dl(time(7),25) dl(time(8),26) dl(time(9),27) dl(time(10),28) dl(time(11),29) dl(time(12),19) dl(time(1),21) dl(time(13),30) dl(time(15),10) dl(time(14),11) dl(time(16),20) dl(time(17),9) dl(time(18),8) dl(time(19),7) dl(time(20),5) dl(time(21),3) dl(time(22),2) dl(time(23),1) dl(time(24),4) dl(time(25),6) dl(time(26),12) dl(time(27),22) dl(time(28),13) dl(time(29),14) dl(time(30),23)
+00:04.252 Optimization: 378000 10800 720 11
+00:04.256 Answer: 6
+00:04.256 dl(time(3),14) dl(time(2),17) dl(time(4),15) dl(time(5),18) dl(time(6),24) dl(time(7),25) dl(time(8),26) dl(time(9),27) dl(time(10),28) dl(time(11),29) dl(time(12),19) dl(time(1),21) dl(time(13),30) dl(time(15),10) dl(time(14),11) dl(time(16),20) dl(time(17),9) dl(time(18),8) dl(time(19),7) dl(time(20),5) dl(time(21),3) dl(time(22),2) dl(time(23),1) dl(time(24),4) dl(time(25),6) dl(time(26),12) dl(time(27),22) dl(time(28),13) dl(time(29),16) dl(time(30),23)
+00:04.257 Optimization: 378000 10800 720 10
+00:04.305 Answer: 7
+00:04.305 dl(time(3),16) dl(time(2),17) dl(time(4),15) dl(time(5),18) dl(time(6),24) dl(time(7),25) dl(time(8),26) dl(time(9),27) dl(time(10),28) dl(time(11),29) dl(time(12),19) dl(time(1),21) dl(time(13),30) dl(time(15),10) dl(time(14),11) dl(time(16),20) dl(time(17),9) dl(time(18),8) dl(time(19),7) dl(time(20),5) dl(time(21),3) dl(time(22),1) dl(time(23),2) dl(time(24),4) dl(time(25),6) dl(time(26),12) dl(time(27),22) dl(time(28),13) dl(time(29),14) dl(time(30),23)
+00:04.305 Optimization: 378000 10800 690 10
+00:04.354 Answer: 8
+00:04.354 dl(time(3),16) dl(time(2),17) dl(time(4),15) dl(time(5),18) dl(time(6),24) dl(time(7),25) dl(time(8),26) dl(time(9),27) dl(time(10),28) dl(time(11),29) dl(time(12),19) dl(time(1),21) dl(time(13),30) dl(time(15),10) dl(time(14),11) dl(time(16),20) dl(time(17),9) dl(time(18),8) dl(time(19),7) dl(time(20),5) dl(time(21),1) dl(time(22),2) dl(time(23),3) dl(time(24),4) dl(time(25),6) dl(time(26),12) dl(time(27),22) dl(time(28),13) dl(time(29),14) dl(time(30),23)
+00:04.354 Optimization: 378000 10800 660 9
+00:04.389 Answer: 9
+00:04.389 dl(time(3),15) dl(time(2),17) dl(time(4),16) dl(time(5),18) dl(time(6),24) dl(time(7),25) dl(time(8),26) dl(time(9),27) dl(time(10),28) dl(time(11),29) dl(time(12),19) dl(time(1),21) dl(time(13),30) dl(time(15),10) dl(time(14),11) dl(time(16),20) dl(time(17),9) dl(time(18),8) dl(time(19),7) dl(time(20),5) dl(time(21),1) dl(time(22),2) dl(time(23),3) dl(time(24),4) dl(time(25),6) dl(time(26),12) dl(time(27),22) dl(time(28),13) dl(time(29),14) dl(time(30),23)
+00:04.389 Optimization: 378000 10800 660 8
+00:04.397 Answer: 10
+00:04.397 dl(time(3),13) dl(time(2),17) dl(time(4),16) dl(time(5),18) dl(time(6),24) dl(time(7),25) dl(time(8),26) dl(time(9),27) dl(time(10),28) dl(time(11),29) dl(time(12),19) dl(time(1),21) dl(time(13),30) dl(time(15),10) dl(time(14),11) dl(time(16),20) dl(time(17),9) dl(time(18),8) dl(time(19),7) dl(time(20),5) dl(time(21),1) dl(time(22),2) dl(time(23),3) dl(time(24),4) dl(time(25),6) dl(time(26),12) dl(time(27),22) dl(time(28),14) dl(time(29),15) dl(time(30),23)
+00:04.397 Optimization: 378000 9900 660 8
+00:04.450 Answer: 11
+00:04.450 dl(time(3),16) dl(time(2),13) dl(time(4),17) dl(time(5),18) dl(time(6),24) dl(time(7),25) dl(time(8),26) dl(time(9),27) dl(time(10),28) dl(time(11),29) dl(time(12),19) dl(time(1),21) dl(time(13),30) dl(time(15),10) dl(time(14),11) dl(time(16),20) dl(time(17),9) dl(time(18),8) dl(time(19),7) dl(time(20),5) dl(time(21),1) dl(time(22),2) dl(time(23),3) dl(time(24),4) dl(time(25),6) dl(time(26),12) dl(time(27),22) dl(time(28),14) dl(time(29),15) dl(time(30),23)
+00:04.450 Optimization: 378000 9900 660 7
+00:04.491 Answer: 12
+00:04.491 dl(time(3),13) dl(time(2),17) dl(time(4),16) dl(time(5),18) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),28) dl(time(11),29) dl(time(12),24) dl(time(1),26) dl(time(13),30) dl(time(15),10) dl(time(14),11) dl(time(16),25) dl(time(17),9) dl(time(18),8) dl(time(19),7) dl(time(20),5) dl(time(21),1) dl(time(22),2) dl(time(23),3) dl(time(24),4) dl(time(25),6) dl(time(26),12) dl(time(27),27) dl(time(28),14) dl(time(29),15) dl(time(30),19)
+00:04.491 Optimization: 378000 9900 630 8
+00:04.517 Answer: 13
+00:04.517 dl(time(3),13) dl(time(2),17) dl(time(4),16) dl(time(5),18) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),28) dl(time(11),29) dl(time(12),24) dl(time(1),26) dl(time(13),30) dl(time(15),10) dl(time(14),11) dl(time(16),25) dl(time(17),9) dl(time(18),8) dl(time(19),7) dl(time(20),1) dl(time(21),2) dl(time(22),3) dl(time(23),4) dl(time(24),5) dl(time(25),6) dl(time(26),12) dl(time(27),27) dl(time(28),14) dl(time(29),15) dl(time(30),19)
+00:04.517 Optimization: 378000 9900 630 7
+00:04.543 Answer: 14
+00:04.543 dl(time(3),14) dl(time(2),7) dl(time(4),17) dl(time(5),18) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),28) dl(time(11),29) dl(time(12),24) dl(time(1),26) dl(time(13),30) dl(time(15),11) dl(time(14),12) dl(time(16),25) dl(time(17),10) dl(time(18),9) dl(time(19),8) dl(time(20),1) dl(time(21),2) dl(time(22),3) dl(time(23),4) dl(time(24),5) dl(time(25),6) dl(time(26),13) dl(time(27),27) dl(time(28),15) dl(time(29),16) dl(time(30),19)
+00:04.543 Optimization: 378000 9000 630 6
+00:04.623 Answer: 15
+00:04.623 dl(time(3),14) dl(time(2),7) dl(time(4),17) dl(time(5),18) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),28) dl(time(11),29) dl(time(12),24) dl(time(1),26) dl(time(13),30) dl(time(15),12) dl(time(14),15) dl(time(16),25) dl(time(17),10) dl(time(18),9) dl(time(19),8) dl(time(20),6) dl(time(21),5) dl(time(22),4) dl(time(23),3) dl(time(24),2) dl(time(25),1) dl(time(26),11) dl(time(27),27) dl(time(28),13) dl(time(29),16) dl(time(30),19)
+00:04.623 Optimization: 351000 9000 780 11
+00:04.704 Answer: 16
+00:04.704 dl(time(3),14) dl(time(2),7) dl(time(4),17) dl(time(5),18) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),24) dl(time(11),29) dl(time(12),25) dl(time(1),27) dl(time(13),30) dl(time(15),12) dl(time(14),15) dl(time(16),26) dl(time(17),10) dl(time(18),9) dl(time(19),8) dl(time(20),6) dl(time(21),5) dl(time(22),4) dl(time(23),3) dl(time(24),2) dl(time(25),1) dl(time(26),11) dl(time(27),28) dl(time(28),13) dl(time(29),16) dl(time(30),19)
+00:04.704 Optimization: 351000 9000 660 11
+00:04.715 Answer: 17
+00:04.715 dl(time(3),14) dl(time(2),7) dl(time(4),17) dl(time(5),18) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),25) dl(time(11),29) dl(time(12),24) dl(time(1),27) dl(time(13),30) dl(time(15),12) dl(time(14),15) dl(time(16),26) dl(time(17),10) dl(time(18),9) dl(time(19),8) dl(time(20),6) dl(time(21),5) dl(time(22),4) dl(time(23),3) dl(time(24),1) dl(time(25),2) dl(time(26),11) dl(time(27),28) dl(time(28),13) dl(time(29),16) dl(time(30),19)
+00:04.715 Optimization: 351000 9000 660 10
+00:04.729 Answer: 18
+00:04.729 dl(time(3),13) dl(time(2),9) dl(time(4),17) dl(time(5),18) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),24) dl(time(10),25) dl(time(11),29) dl(time(12),23) dl(time(1),27) dl(time(13),30) dl(time(15),12) dl(time(14),15) dl(time(16),26) dl(time(17),10) dl(time(18),8) dl(time(19),7) dl(time(20),6) dl(time(21),5) dl(time(22),4) dl(time(23),3) dl(time(24),2) dl(time(25),1) dl(time(26),11) dl(time(27),28) dl(time(28),14) dl(time(29),16) dl(time(30),19)
+00:04.729 Optimization: 324000 9000 690 11
+00:04.732 Answer: 19
+00:04.732 dl(time(3),13) dl(time(2),9) dl(time(4),17) dl(time(5),18) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),24) dl(time(11),29) dl(time(12),25) dl(time(1),27) dl(time(13),30) dl(time(15),12) dl(time(14),15) dl(time(16),26) dl(time(17),10) dl(time(18),8) dl(time(19),7) dl(time(20),6) dl(time(21),5) dl(time(22),4) dl(time(23),3) dl(time(24),2) dl(time(25),1) dl(time(26),11) dl(time(27),28) dl(time(28),14) dl(time(29),16) dl(time(30),19)
+00:04.732 Optimization: 324000 9000 660 11
+00:04.739 Answer: 20
+00:04.739 dl(time(3),13) dl(time(2),9) dl(time(4),17) dl(time(5),18) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),25) dl(time(11),29) dl(time(12),24) dl(time(1),27) dl(time(13),30) dl(time(15),12) dl(time(14),15) dl(time(16),26) dl(time(17),10) dl(time(18),8) dl(time(19),7) dl(time(20),6) dl(time(21),5) dl(time(22),4) dl(time(23),3) dl(time(24),1) dl(time(25),2) dl(time(26),11) dl(time(27),28) dl(time(28),14) dl(time(29),16) dl(time(30),19)
+00:04.739 Optimization: 324000 9000 660 10
+00:04.748 Answer: 21
+00:04.748 dl(time(3),13) dl(time(2),9) dl(time(4),17) dl(time(5),18) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),27) dl(time(11),29) dl(time(12),24) dl(time(1),26) dl(time(13),30) dl(time(15),12) dl(time(14),15) dl(time(16),25) dl(time(17),10) dl(time(18),8) dl(time(19),7) dl(time(20),6) dl(time(21),5) dl(time(22),3) dl(time(23),1) dl(time(24),2) dl(time(25),4) dl(time(26),11) dl(time(27),28) dl(time(28),14) dl(time(29),16) dl(time(30),19)
+00:04.748 Optimization: 324000 9000 660 9
+00:04.750 Answer: 22
+00:04.750 dl(time(3),13) dl(time(2),9) dl(time(4),15) dl(time(5),18) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),27) dl(time(11),29) dl(time(12),24) dl(time(1),26) dl(time(13),30) dl(time(15),12) dl(time(14),16) dl(time(16),25) dl(time(17),10) dl(time(18),8) dl(time(19),7) dl(time(20),6) dl(time(21),5) dl(time(22),3) dl(time(23),1) dl(time(24),2) dl(time(25),4) dl(time(26),11) dl(time(27),28) dl(time(28),14) dl(time(29),17) dl(time(30),19)
+00:04.750 Optimization: 324000 8100 660 9
+00:04.772 Answer: 23
+00:04.772 dl(time(3),12) dl(time(2),9) dl(time(4),14) dl(time(5),16) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),27) dl(time(11),29) dl(time(12),24) dl(time(1),26) dl(time(13),30) dl(time(15),17) dl(time(14),19) dl(time(16),25) dl(time(17),10) dl(time(18),8) dl(time(19),7) dl(time(20),6) dl(time(21),5) dl(time(22),3) dl(time(23),1) dl(time(24),2) dl(time(25),4) dl(time(26),11) dl(time(27),28) dl(time(28),13) dl(time(29),15) dl(time(30),18)
+00:04.772 Optimization: 324000 7200 660 9
+00:04.794 Answer: 24
+00:04.794 dl(time(3),12) dl(time(2),9) dl(time(4),14) dl(time(5),16) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),24) dl(time(11),29) dl(time(12),25) dl(time(1),27) dl(time(13),30) dl(time(15),17) dl(time(14),19) dl(time(16),26) dl(time(17),10) dl(time(18),8) dl(time(19),7) dl(time(20),6) dl(time(21),5) dl(time(22),3) dl(time(23),1) dl(time(24),2) dl(time(25),4) dl(time(26),11) dl(time(27),28) dl(time(28),13) dl(time(29),15) dl(time(30),18)
+00:04.794 Optimization: 324000 7200 600 9
+00:04.804 Answer: 25
+00:04.804 dl(time(3),12) dl(time(2),9) dl(time(4),14) dl(time(5),16) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),25) dl(time(11),29) dl(time(12),24) dl(time(1),27) dl(time(13),30) dl(time(15),17) dl(time(14),19) dl(time(16),26) dl(time(17),10) dl(time(18),8) dl(time(19),7) dl(time(20),6) dl(time(21),5) dl(time(22),1) dl(time(23),2) dl(time(24),3) dl(time(25),4) dl(time(26),11) dl(time(27),28) dl(time(28),13) dl(time(29),15) dl(time(30),18)
+00:04.804 Optimization: 324000 7200 600 8
+00:04.808 Answer: 26
+00:04.808 dl(time(3),12) dl(time(2),9) dl(time(4),14) dl(time(5),16) dl(time(6),20) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),24) dl(time(11),28) dl(time(12),25) dl(time(1),27) dl(time(13),30) dl(time(15),17) dl(time(14),19) dl(time(16),26) dl(time(17),10) dl(time(18),8) dl(time(19),7) dl(time(20),6) dl(time(21),5) dl(time(22),1) dl(time(23),2) dl(time(24),3) dl(time(25),4) dl(time(26),11) dl(time(27),29) dl(time(28),13) dl(time(29),15) dl(time(30),18)
+00:04.808 Optimization: 324000 7200 570 8
+00:04.827 Answer: 27
+00:04.827 dl(time(3),12) dl(time(2),9) dl(time(4),14) dl(time(5),16) dl(time(6),19) dl(time(7),20) dl(time(8),21) dl(time(9),22) dl(time(10),23) dl(time(11),28) dl(time(12),25) dl(time(1),27) dl(time(13),30) dl(time(15),17) dl(time(14),24) dl(time(16),26) dl(time(17),10) dl(time(18),8) dl(time(19),7) dl(time(20),6) dl(time(21),5) dl(time(22),1) dl(time(23),2) dl(time(24),3) dl(time(25),4) dl(time(26),11) dl(time(27),29) dl(time(28),13) dl(time(29),15) dl(time(30),18)
+00:04.827 Optimization: 324000 7200 540 8
+00:04.832 Answer: 28
+00:04.832 dl(time(3),10) dl(time(2),11) dl(time(4),14) dl(time(5),16) dl(time(6),19) dl(time(7),20) dl(time(8),21) dl(time(9),22) dl(time(10),23) dl(time(11),26) dl(time(12),25) dl(time(1),28) dl(time(13),30) dl(time(15),17) dl(time(14),24) dl(time(16),27) dl(time(17),12) dl(time(18),9) dl(time(19),7) dl(time(20),6) dl(time(21),5) dl(time(22),1) dl(time(23),2) dl(time(24),3) dl(time(25),4) dl(time(26),8) dl(time(27),29) dl(time(28),13) dl(time(29),15) dl(time(30),18)
+00:04.832 Optimization: 297000 7200 540 9
+00:05.94 Answer: 29
+00:05.94 dl(time(3),13) dl(time(2),14) dl(time(4),11) dl(time(5),16) dl(time(6),19) dl(time(7),20) dl(time(8),21) dl(time(9),22) dl(time(10),23) dl(time(11),25) dl(time(12),26) dl(time(1),28) dl(time(13),30) dl(time(15),17) dl(time(14),24) dl(time(16),27) dl(time(17),15) dl(time(18),12) dl(time(19),10) dl(time(20),7) dl(time(21),6) dl(time(22),1) dl(time(23),2) dl(time(24),3) dl(time(25),4) dl(time(26),5) dl(time(27),29) dl(time(28),8) dl(time(29),9) dl(time(30),18)
+00:05.94 Optimization: 270000 8100 630 10
+00:05.96 Answer: 30
+00:05.96 dl(time(3),13) dl(time(2),14) dl(time(4),11) dl(time(5),16) dl(time(6),19) dl(time(7),20) dl(time(8),21) dl(time(9),22) dl(time(10),23) dl(time(11),25) dl(time(12),26) dl(time(1),28) dl(time(13),29) dl(time(15),17) dl(time(14),24) dl(time(16),27) dl(time(17),15) dl(time(18),12) dl(time(19),10) dl(time(20),7) dl(time(21),6) dl(time(22),1) dl(time(23),2) dl(time(24),3) dl(time(25),4) dl(time(26),5) dl(time(27),30) dl(time(28),8) dl(time(29),9) dl(time(30),18)
+00:05.96 Optimization: 270000 8100 600 10
+00:05.102 Answer: 31
+00:05.102 dl(time(3),12) dl(time(2),13) dl(time(4),10) dl(time(5),16) dl(time(6),19) dl(time(7),20) dl(time(8),21) dl(time(9),22) dl(time(10),23) dl(time(11),25) dl(time(12),26) dl(time(1),28) dl(time(13),30) dl(time(15),17) dl(time(14),24) dl(time(16),27) dl(time(17),14) dl(time(18),11) dl(time(19),9) dl(time(20),7) dl(time(21),6) dl(time(22),1) dl(time(23),2) dl(time(24),3) dl(time(25),4) dl(time(26),5) dl(time(27),29) dl(time(28),8) dl(time(29),15) dl(time(30),18)
+00:05.102 Optimization: 270000 7200 630 10
+00:05.106 Answer: 32
+00:05.106 dl(time(3),12) dl(time(2),13) dl(time(4),10) dl(time(5),16) dl(time(6),19) dl(time(7),20) dl(time(8),21) dl(time(9),22) dl(time(10),23) dl(time(11),25) dl(time(12),26) dl(time(1),28) dl(time(13),30) dl(time(15),17) dl(time(14),24) dl(time(16),27) dl(time(17),14) dl(time(18),11) dl(time(19),9) dl(time(20),7) dl(time(21),1) dl(time(22),2) dl(time(23),3) dl(time(24),4) dl(time(25),5) dl(time(26),6) dl(time(27),29) dl(time(28),8) dl(time(29),15) dl(time(30),18)
+00:05.106 Optimization: 270000 7200 630 9
+00:05.132 Answer: 33
+00:05.132 dl(time(3),12) dl(time(2),13) dl(time(4),10) dl(time(5),16) dl(time(6),19) dl(time(7),20) dl(time(8),21) dl(time(9),22) dl(time(10),23) dl(time(11),25) dl(time(12),27) dl(time(1),29) dl(time(13),26) dl(time(15),17) dl(time(14),24) dl(time(16),28) dl(time(17),14) dl(time(18),11) dl(time(19),9) dl(time(20),7) dl(time(21),1) dl(time(22),2) dl(time(23),3) dl(time(24),4) dl(time(25),5) dl(time(26),6) dl(time(27),30) dl(time(28),8) dl(time(29),15) dl(time(30),18)
+00:05.132 Optimization: 270000 7200 540 9
+00:05.135 Answer: 34
+00:05.136 dl(time(3),12) dl(time(2),13) dl(time(4),10) dl(time(5),16) dl(time(6),19) dl(time(7),20) dl(time(8),21) dl(time(9),22) dl(time(10),23) dl(time(11),25) dl(time(12),27) dl(time(1),29) dl(time(13),26) dl(time(15),17) dl(time(14),24) dl(time(16),28) dl(time(17),14) dl(time(18),11) dl(time(19),9) dl(time(20),6) dl(time(21),1) dl(time(22),2) dl(time(23),3) dl(time(24),4) dl(time(25),5) dl(time(26),7) dl(time(27),30) dl(time(28),8) dl(time(29),15) dl(time(30),18)
+00:05.136 Optimization: 270000 7200 510 9
+00:05.197 Answer: 35
+00:05.197 dl(time(3),14) dl(time(2),15) dl(time(4),10) dl(time(5),12) dl(time(6),19) dl(time(7),21) dl(time(8),22) dl(time(9),23) dl(time(10),24) dl(time(11),25) dl(time(12),27) dl(time(1),29) dl(time(13),26) dl(time(15),17) dl(time(14),20) dl(time(16),28) dl(time(17),16) dl(time(18),13) dl(time(19),9) dl(time(20),1) dl(time(21),2) dl(time(22),3) dl(time(23),4) dl(time(24),5) dl(time(25),6) dl(time(26),7) dl(time(27),30) dl(time(28),8) dl(time(29),11) dl(time(30),18)
+00:05.197 Optimization: 270000 7200 510 8
+00:05.202 Answer: 36
+00:05.202 dl(time(3),14) dl(time(2),15) dl(time(4),10) dl(time(5),12) dl(time(6),19) dl(time(7),20) dl(time(8),21) dl(time(9),22) dl(time(10),23) dl(time(11),24) dl(time(12),27) dl(time(1),29) dl(time(13),25) dl(time(15),17) dl(time(14),26) dl(time(16),28) dl(time(17),16) dl(time(18),13) dl(time(19),9) dl(time(20),1) dl(time(21),2) dl(time(22),3) dl(time(23),4) dl(time(24),5) dl(time(25),6) dl(time(26),7) dl(time(27),30) dl(time(28),8) dl(time(29),11) dl(time(30),18)
+00:05.202 Optimization: 270000 7200 480 8
+00:05.267 Answer: 37
+00:05.267 dl(time(3),14) dl(time(2),15) dl(time(4),12) dl(time(5),10) dl(time(6),19) dl(time(7),20) dl(time(8),21) dl(time(9),22) dl(time(10),23) dl(time(11),24) dl(time(12),27) dl(time(1),29) dl(time(13),26) dl(time(15),17) dl(time(14),25) dl(time(16),28) dl(time(17),16) dl(time(18),13) dl(time(19),11) dl(time(20),9) dl(time(21),1) dl(time(22),2) dl(time(23),3) dl(time(24),4) dl(time(25),5) dl(time(26),6) dl(time(27),30) dl(time(28),7) dl(time(29),8) dl(time(30),18)
+00:05.267 Optimization: 243000 7200 540 10
+00:05.268 Answer: 38
+00:05.268 dl(time(3),14) dl(time(2),15) dl(time(4),12) dl(time(5),10) dl(time(6),19) dl(time(7),20) dl(time(8),21) dl(time(9),22) dl(time(10),23) dl(time(11),24) dl(time(12),27) dl(time(1),29) dl(time(13),25) dl(time(15),17) dl(time(14),26) dl(time(16),28) dl(time(17),16) dl(time(18),13) dl(time(19),11) dl(time(20),9) dl(time(21),1) dl(time(22),2) dl(time(23),3) dl(time(24),4) dl(time(25),5) dl(time(26),6) dl(time(27),30) dl(time(28),7) dl(time(29),8) dl(time(30),18)
+00:05.268 Optimization: 243000 7200 510 10
+00:05.394 Answer: 39
+00:05.394 dl(time(3),18) dl(time(2),19) dl(time(4),16) dl(time(5),14) dl(time(6),12) dl(time(7),10) dl(time(8),8) dl(time(9),23) dl(time(10),24) dl(time(11),25) dl(time(12),27) dl(time(1),29) dl(time(13),26) dl(time(15),21) dl(time(14),22) dl(time(16),28) dl(time(17),20) dl(time(18),17) dl(time(19),15) dl(time(20),13) dl(time(21),11) dl(time(22),9) dl(time(23),2) dl(time(24),1) dl(time(25),3) dl(time(26),4) dl(time(27),30) dl(time(28),5) dl(time(29),6) dl(time(30),7)
+00:05.394 Optimization: 216000 5400 630 16
+00:05.455 Answer: 40
+00:05.455 dl(time(3),18) dl(time(2),19) dl(time(4),16) dl(time(5),14) dl(time(6),12) dl(time(7),10) dl(time(8),8) dl(time(9),24) dl(time(10),25) dl(time(11),26) dl(time(12),23) dl(time(1),29) dl(time(13),27) dl(time(15),21) dl(time(14),22) dl(time(16),28) dl(time(17),20) dl(time(18),17) dl(time(19),15) dl(time(20),13) dl(time(21),11) dl(time(22),9) dl(time(23),1) dl(time(24),2) dl(time(25),3) dl(time(26),4) dl(time(27),30) dl(time(28),5) dl(time(29),6) dl(time(30),7)
+00:05.455 Optimization: 216000 5400 630 15
+00:05.459 Answer: 41
+00:05.459 dl(time(3),18) dl(time(2),19) dl(time(4),16) dl(time(5),14) dl(time(6),12) dl(time(7),10) dl(time(8),8) dl(time(9),23) dl(time(10),24) dl(time(11),25) dl(time(12),27) dl(time(1),29) dl(time(13),26) dl(time(15),21) dl(time(14),22) dl(time(16),28) dl(time(17),20) dl(time(18),17) dl(time(19),15) dl(time(20),13) dl(time(21),11) dl(time(22),9) dl(time(23),1) dl(time(24),2) dl(time(25),3) dl(time(26),4) dl(time(27),30) dl(time(28),5) dl(time(29),6) dl(time(30),7)
+00:05.459 Optimization: 216000 5400 600 15
+00:05.777 Answer: 42
+00:05.777 dl(time(3),19) dl(time(2),20) dl(time(4),16) dl(time(5),14) dl(time(6),12) dl(time(7),10) dl(time(8),8) dl(time(9),17) dl(time(10),23) dl(time(11),24) dl(time(12),27) dl(time(1),29) dl(time(13),25) dl(time(15),22) dl(time(14),26) dl(time(16),28) dl(time(17),21) dl(time(18),18) dl(time(19),15) dl(time(20),13) dl(time(21),11) dl(time(22),9) dl(time(23),2) dl(time(24),1) dl(time(25),3) dl(time(26),4) dl(time(27),30) dl(time(28),5) dl(time(29),6) dl(time(30),7)
+00:05.777 Optimization: 216000 5400 570 16
+00:05.791 Answer: 43
+00:05.791 dl(time(3),19) dl(time(2),20) dl(time(4),16) dl(time(5),14) dl(time(6),12) dl(time(7),10) dl(time(8),8) dl(time(9),17) dl(time(10),23) dl(time(11),24) dl(time(12),27) dl(time(1),29) dl(time(13),25) dl(time(15),22) dl(time(14),26) dl(time(16),28) dl(time(17),21) dl(time(18),18) dl(time(19),15) dl(time(20),13) dl(time(21),11) dl(time(22),9) dl(time(23),1) dl(time(24),2) dl(time(25),3) dl(time(26),4) dl(time(27),30) dl(time(28),5) dl(time(29),6) dl(time(30),7)
+00:05.791 Optimization: 216000 5400 570 15
+00:05.841 Answer: 44
+00:05.841 dl(time(3),19) dl(time(2),20) dl(time(4),16) dl(time(5),14) dl(time(6),12) dl(time(7),10) dl(time(8),8) dl(time(9),17) dl(time(10),24) dl(time(11),25) dl(time(12),27) dl(time(1),29) dl(time(13),26) dl(time(15),22) dl(time(14),23) dl(time(16),28) dl(time(17),21) dl(time(18),18) dl(time(19),15) dl(time(20),13) dl(time(21),11) dl(time(22),9) dl(time(23),7) dl(time(24),6) dl(time(25),1) dl(time(26),2) dl(time(27),30) dl(time(28),3) dl(time(29),4) dl(time(30),5)
+00:05.841 Optimization: 189000 5400 660 17
+00:06.43 Answer: 45
+00:06.43 dl(time(3),22) dl(time(2),23) dl(time(4),20) dl(time(5),18) dl(time(6),16) dl(time(7),14) dl(time(8),12) dl(time(9),10) dl(time(10),3) dl(time(11),4) dl(time(12),27) dl(time(1),29) dl(time(13),5) dl(time(15),25) dl(time(14),26) dl(time(16),28) dl(time(17),24) dl(time(18),21) dl(time(19),19) dl(time(20),17) dl(time(21),15) dl(time(22),13) dl(time(23),11) dl(time(24),9) dl(time(25),1) dl(time(26),2) dl(time(27),30) dl(time(28),6) dl(time(29),7) dl(time(30),8)
+00:06.43 Optimization: 135000 1800 540 19
+00:06.82 Answer: 46
+00:06.82 dl(time(3),22) dl(time(2),23) dl(time(4),20) dl(time(5),18) dl(time(6),16) dl(time(7),14) dl(time(8),12) dl(time(9),10) dl(time(10),4) dl(time(11),3) dl(time(12),27) dl(time(1),29) dl(time(13),5) dl(time(15),25) dl(time(14),26) dl(time(16),28) dl(time(17),24) dl(time(18),21) dl(time(19),19) dl(time(20),17) dl(time(21),15) dl(time(22),13) dl(time(23),11) dl(time(24),9) dl(time(25),1) dl(time(26),2) dl(time(27),30) dl(time(28),6) dl(time(29),7) dl(time(30),8)
+00:06.82 Optimization: 108000 1800 540 20
+00:06.98 Answer: 47
+00:06.98 dl(time(3),22) dl(time(2),23) dl(time(4),20) dl(time(5),18) dl(time(6),16) dl(time(7),14) dl(time(8),12) dl(time(9),10) dl(time(10),2) dl(time(11),4) dl(time(12),27) dl(time(1),29) dl(time(13),5) dl(time(15),25) dl(time(14),26) dl(time(16),28) dl(time(17),24) dl(time(18),21) dl(time(19),19) dl(time(20),17) dl(time(21),15) dl(time(22),13) dl(time(23),11) dl(time(24),9) dl(time(25),1) dl(time(26),3) dl(time(27),30) dl(time(28),6) dl(time(29),7) dl(time(30),8)
+00:06.98 Optimization: 81000 1800 540 19
+00:06.102 OPTIMUM FOUND
+00:06.102 
+00:06.102 Models       : 47
+00:06.102   Optimum    : yes
+00:06.102 Optimization : 81000 1800 540 19
+00:06.102 Calls        : 1
+00:06.102 Time         : 6.113s (Solving: 5.32s 1st Model: 3.32s Unsat: 0.00s)
+00:06.102 CPU Time     : 6.093s

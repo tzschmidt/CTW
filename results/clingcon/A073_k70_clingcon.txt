@@ -1,0 +1,10 @@
+00:00.0 clingcon version 5.0.1
+00:00.0 Reading from tools/../encodings/CTW_clingcon.lp ...
+00:00.379 Solving...
+30:00.902 UNKNOWN
+30:00.902 
+30:00.902 TIME LIMIT   : 1
+30:00.902 Models       : 0+
+30:00.902 Calls        : 1
+30:00.902 Time         : 1800.912s (Solving: 1800.52s 1st Model: 0.00s Unsat: 0.00s)
+30:00.902 CPU Time     : 1800.836s

@@ -1,0 +1,27 @@
+00:00.0 clingo version 5.5.1
+00:00.0 Reading from tools/../encodings/CTW_nat_optimal.lp ...
+00:07.142 Solving...
+01:38.320 Answer: 1
+01:38.320 solution(4,2) solution(16,1) solution(5,3) solution(6,4) solution(42,6) solution(43,5) solution(41,8) solution(47,7) solution(38,9) solution(49,10) solution(50,11) solution(44,23) solution(37,13) solution(35,14) solution(31,15) solution(25,16) solution(29,17) solution(40,12) solution(39,18) solution(33,19) solution(28,20) solution(27,21) solution(30,22) solution(46,38) solution(48,29) solution(13,31) solution(19,30) solution(12,32) solution(11,33) solution(10,34) solution(9,35) solution(23,36) solution(24,37) solution(34,39) solution(21,40) solution(14,41) solution(32,42) solution(36,43) solution(26,45) solution(45,44) n(16) solution(7,26) solution(8,27) solution(2,28) solution(18,46) solution(20,47) solution(17,48) solution(1,24) solution(15,49) solution(22,50) solution(3,25) l(41) m(13) s(24)
+01:38.320 Optimization: 3000000 32500 2050 16
+01:38.346 Answer: 2
+01:38.346 solution(4,2) solution(16,1) solution(5,3) solution(7,4) solution(42,6) solution(43,5) solution(41,8) solution(47,7) solution(38,9) solution(49,10) solution(50,11) solution(44,23) solution(37,13) solution(35,14) solution(31,15) solution(25,16) solution(29,17) solution(40,12) solution(39,18) solution(33,19) solution(28,20) solution(27,21) solution(30,22) solution(46,38) solution(48,29) solution(13,31) solution(19,30) solution(12,32) solution(11,33) solution(10,34) solution(9,35) solution(23,36) solution(24,37) solution(34,39) solution(21,40) solution(14,41) solution(32,42) solution(36,43) solution(26,45) solution(45,44) n(16) solution(6,26) solution(8,27) solution(2,28) solution(18,46) solution(20,47) solution(17,48) solution(1,24) solution(15,49) solution(22,50) solution(3,25) l(40) m(13) s(24)
+01:38.346 Optimization: 3000000 32500 2000 16
+01:38.353 Answer: 3
+01:38.353 solution(4,2) solution(16,1) solution(5,3) solution(8,4) solution(42,6) solution(43,5) solution(41,8) solution(47,7) solution(38,9) solution(49,10) solution(50,11) solution(44,23) solution(37,13) solution(35,14) solution(31,15) solution(25,16) solution(29,17) solution(40,12) solution(39,18) solution(33,19) solution(28,20) solution(27,21) solution(30,22) solution(46,38) solution(48,29) solution(13,31) solution(19,30) solution(12,32) solution(11,33) solution(10,34) solution(9,35) solution(23,36) solution(24,37) solution(34,39) solution(21,40) solution(14,41) solution(32,42) solution(36,43) solution(26,45) solution(45,44) n(16) solution(6,26) solution(7,27) solution(2,28) solution(18,46) solution(20,47) solution(17,48) solution(1,24) solution(15,49) solution(22,50) solution(3,25) l(39) m(13) s(24)
+01:38.353 Optimization: 3000000 32500 1950 16
+12:57.983 Answer: 4
+12:57.983 solution(5,2) solution(9,1) solution(10,3) solution(14,4) solution(47,6) solution(43,5) solution(44,8) solution(48,7) solution(46,9) solution(49,10) solution(50,11) solution(21,23) solution(36,13) solution(35,14) solution(33,15) solution(13,16) solution(41,17) solution(12,12) solution(18,18) solution(19,19) solution(20,20) solution(24,21) solution(27,22) solution(39,38) solution(45,29) solution(23,31) solution(22,30) solution(25,32) solution(26,33) solution(28,34) solution(30,35) solution(37,36) solution(42,37) solution(34,39) solution(32,40) solution(29,41) solution(38,42) solution(40,43) solution(17,45) solution(31,44) n(19) solution(15,26) solution(16,27) solution(3,28) solution(6,46) solution(7,47) solution(4,48) solution(1,24) solution(2,49) solution(11,50) solution(8,25) l(30) m(11) s(22)
+12:57.983 Optimization: 2750000 27500 1500 19
+12:58.10 Answer: 5
+12:58.10 solution(5,2) solution(9,1) solution(8,3) solution(14,4) solution(47,6) solution(43,5) solution(44,8) solution(48,7) solution(46,9) solution(49,10) solution(50,11) solution(21,23) solution(36,13) solution(35,14) solution(33,15) solution(13,16) solution(41,17) solution(12,12) solution(18,18) solution(19,19) solution(20,20) solution(24,21) solution(27,22) solution(39,38) solution(45,29) solution(23,31) solution(22,30) solution(25,32) solution(26,33) solution(28,34) solution(30,35) solution(37,36) solution(42,37) solution(34,39) solution(32,40) solution(29,41) solution(38,42) solution(40,43) solution(17,45) solution(31,44) n(19) solution(15,26) solution(16,27) solution(3,28) solution(6,46) solution(7,47) solution(4,48) solution(1,24) solution(2,49) solution(11,50) solution(10,25) l(30) m(11) s(21)
+12:58.10 Optimization: 2625000 27500 1500 19
+29:59.991 SATISFIABLE
+29:59.991 
+29:59.991 TIME LIMIT   : 1
+29:59.991 Models       : 5+
+29:59.991   Optimum    : unknown
+29:59.991 Optimization : 2625000 27500 1500 19
+29:59.991 Calls        : 1
+29:59.991 Time         : 1800.000s (Solving: 1792.85s 1st Model: 91.18s Unsat: 0.00s)
+29:59.991 CPU Time     : 1799.937s
