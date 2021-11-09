@@ -128,6 +128,7 @@
                  #:x-label "time in ms"
                  #:y-label "optimization value"
                  #:title title
+                 #:legend-anchor 'top-right
                  (case x
                    [(0) (list (lines-for-plot 0 'solid))]
                    [(1) (list (lines-for-plot 0 'solid) (lines-for-plot 1 'long-dash))]
