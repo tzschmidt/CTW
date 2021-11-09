@@ -1,0 +1,10 @@
+00:00.0 clingcon version 5.0.1
+00:00.0 Reading from tools/../flatzingo/encoding.lp ...
+00:24.944 Solving...
+30:00.157 UNKNOWN
+30:00.157 
+30:00.157 TIME LIMIT   : 1
+30:00.157 Models       : 0+
+30:00.157 Calls        : 1
+30:00.157 Time         : 1800.165s (Solving: 1775.21s 1st Model: 0.00s Unsat: 0.00s)
+30:00.157 CPU Time     : 1800.096s

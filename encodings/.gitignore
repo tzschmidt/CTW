@@ -1,5 +1,4 @@
 *.swp
 *~
 *test*.lp
-*out*.txt
-*_V*.lp
+*.txt
