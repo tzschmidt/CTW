@@ -20,8 +20,9 @@ jobNum(1..k).
    T1!=T2-1.
 
 % Optimization
-s(J) :- jobNum(J), J<=b, solution(T1,J), solution(T2,J+b),
-   |T1-T2| > 1.
+s(0) :- b=0.
+s(X) :- b!=0, X = #count{J:solution(T1,J), solution(T2,J+b),
+   |T1-T2|>1, J<=b}.
 
 %-------------------
 m(0) :- b=0.
@@ -50,17 +51,18 @@ lchain(X-1) :- lchain(X), X > 0.
 l(X) :- lchain(X), not lchain(X+1).
 
 %-------------------
-n(J1,J2) :- solution(T1,J1), solution(T2,J2),
+sov(J1,J2) :- solution(T1,J1), solution(T2,J2),
    softcon(J1,J2), T1>T2.
+n(X) :- X = #count{J1,J2:sov(J1,J2)}.
 
 %-------------------
-#minimize{kkk@4,J: s(J)}.
+#minimize{kkk*X@4: s(X)}.
 #minimize{kk*X@3: m(X)}.
 #minimize{k*X@2: l(X)}.
-#minimize{1@1,J1,J2: n(J1,J2)}.
+#minimize{X@1: n(X)}.
 
 #show solution/2.
 #show s/1.
 #show m/1.
 #show l/1.
-#show n/2.
+#show n/1.
