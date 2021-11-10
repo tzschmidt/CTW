@@ -1,0 +1,15 @@
+00:00.0 clingo-dl version 1.3.0
+00:00.0 Reading from ./tools/../encodings/CTW_clingoDL.lp ...
+01:30.411 Solving...
+57:40.42 Answer: 1
+57:40.42 dl(time(3),5) dl(time(4),4) dl(time(6),24) dl(time(7),23) dl(time(8),67) dl(time(9),65) dl(time(32),43) dl(time(11),38) dl(time(15),40) dl(time(14),46) dl(time(46),10) dl(time(93),7) dl(time(16),63) dl(time(61),35) dl(time(20),64) dl(time(18),60) dl(time(22),52) dl(time(95),58) dl(time(24),85) dl(time(21),75) dl(time(25),62) dl(time(23),71) dl(time(26),96) dl(time(42),95) dl(time(27),78) dl(time(98),92) dl(time(28),98) dl(time(41),99) dl(time(30),50) dl(time(29),18) dl(time(34),49) dl(time(33),27) dl(time(35),6) dl(time(37),33) dl(time(39),13) dl(time(36),55) dl(time(31),51) dl(time(45),69) dl(time(59),70) dl(time(58),9) dl(time(47),26) dl(time(50),16) dl(time(48),29) dl(time(88),14) dl(time(51),79) dl(time(81),82) dl(time(52),83) dl(time(87),84) dl(time(53),59) dl(time(54),72) dl(time(55),68) dl(time(56),57) dl(time(60),30) dl(time(70),17) dl(time(62),36) dl(time(64),34) dl(time(63),42) dl(time(72),44) dl(time(65),87) dl(time(68),86) dl(time(66),89) dl(time(69),88) dl(time(67),90) dl(time(85),15) dl(time(71),12) dl(time(84),1) dl(time(73),39) dl(time(74),41) dl(time(76),45) dl(time(80),53) dl(time(77),48) dl(time(78),47) dl(time(79),54) dl(time(75),56) dl(time(82),76) dl(time(83),74) dl(time(86),19) dl(time(49),21) dl(time(89),77) dl(time(1),66) dl(time(57),8) dl(time(96),97) dl(time(97),94) dl(time(43),93) dl(time(99),91) dl(time(44),73) dl(time(100),32) dl(time(2),25) dl(time(5),28) dl(time(10),81) dl(time(12),37) dl(time(13),31) dl(time(17),61) dl(time(19),80) dl(time(38),22) dl(time(40),100) dl(time(90),3) dl(time(91),2) dl(time(92),20) dl(time(94),11)
+57:40.42 Optimization: 43000000 230000 9800 25
+59:59.994 SATISFIABLE
+59:59.994 
+59:59.994 TIME LIMIT   : 1
+59:59.994 Models       : 1+
+59:59.994   Optimum    : unknown
+59:59.994 Optimization : 43000000 230000 9800 25
+59:59.994 Calls        : 1
+59:59.994 Time         : 3600.002s (Solving: 3509.58s 1st Model: 3369.63s Unsat: 0.00s)
+59:59.994 CPU Time     : 3599.927s
